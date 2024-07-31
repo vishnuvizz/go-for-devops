@@ -12,14 +12,29 @@ func main() {
 	concatenated := str1 + " " + str2
 	fmt.Println("Concatenated String:", concatenated)
 
+	// string concat by Vishnu
+	str3 := "Hi"
+	str4 := "there"
+	Concat := str3 + " " + str4
+	fmt.Println("Concatenated String:", Concat)
+
 	// Splitting a string
 	sentence := "Go is an open source programming language."
 	words := strings.Split(sentence, " ")
 	fmt.Println("Words in sentence:", words)
 
+	//Splitting string by Vishnu
+	sentence1 := "Hi there how is everything going"
+	words1 := strings.Split(sentence1, " ")
+	fmt.Println("Words in sentence:", words1)
+
 	// Replacing a substring
 	replaced := strings.Replace(sentence, "Go", "Golang", 1)
 	fmt.Println("Replaced String:", replaced)
+
+	//replacing a substring
+	replaced1 := strings.Replace(sentence1, "everything", "all", 1)
+	fmt.Println("replacing string by Vishnu:", replaced1)
 
 	// Upper and Lower case
 	upper := strings.ToUpper(sentence)

@@ -22,6 +22,7 @@ func (r Rect) Perimeter() float64 {
 func main() {
 	fmt.Println("interface:")
 
+	//this is input for struct or type Rect
 	var w Geometry = Rect{3, 4}
 
 	fmt.Println("w=", w)

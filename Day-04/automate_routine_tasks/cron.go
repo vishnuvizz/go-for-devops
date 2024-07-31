@@ -16,6 +16,10 @@ func main() {
 		fmt.Println("Job 1: Running every minute", time.Now())
 	})
 
+	cron.New.AddFunc("* * * * *", func() {
+		fmt.Println("Job1 by Vishnu", time.Now())
+	})
+
 	// Add a job that runs every day at 9:00 AM
 	c.AddFunc("0 9 * * *", func() {
 		fmt.Println("Job 2: Running every day at 9:00 AM", time.Now())

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math"
 	"math/cmplx"
+	"reflect"
 	"strconv"
 )
 
@@ -15,6 +16,13 @@ func main() {
 	fmt.Println("Multiplication:", a*b)
 	fmt.Println("Division:", a/b)
 	fmt.Println("Modulus:", a%b)
+
+	//arithimetic by Vishnu
+	n, m := 5, 10
+	fmt.Println("add:", n+m)
+	fmt.Println("sub:", n-m)
+	fmt.Println("mul:", n*m)
+	fmt.Println("dev:", n/m)
 
 	// Working with Floats
 	var c, d float64 = 3.7, 2.5
@@ -32,6 +40,11 @@ func main() {
 	var h int = int(g)
 	fmt.Println("Float to Integer:", h)
 
+	//vishnu float conversion
+	var o float64 = float64(m)
+	fmt.Println("float convresion by Visnu:", o)
+	fmt.Println("float convresion type by Vishnu:", reflect.TypeOf(o))
+
 	// Working with Complex Numbers
 	var complex1 complex128 = complex(3, 4) // 3 + 4i
 	var complex2 complex128 = complex(1, 2) // 1 + 2i
@@ -47,6 +60,10 @@ func main() {
 	fmt.Println("Sin:", math.Sin(math.Pi/2))   // sin(π/2)
 	fmt.Println("Cos:", math.Cos(math.Pi))     // cos(π)
 	fmt.Println("Log:", math.Log(math.E))      // ln(e)
+
+	// math by Vishnu
+	fmt.Println("power math by Vishnu:", math.Pow(2, 3))
+	fmt.Println("square root by Vishnu:", math.Sqrt(16))
 
 	// String to Number Parsing
 	numStr := "3.14159"
